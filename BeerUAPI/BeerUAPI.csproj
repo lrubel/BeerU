@@ -295,7 +295,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BeerUAPI.Data\BeerUAPI.Data.csproj">
-      <Project>{b2b5a051-fdab-4e2a-bff9-d9eddcfacabc}</Project>
+      <Project>{B2B5A051-FDAB-4E2A-BFF9-D9EDDCFACABC}</Project>
       <Name>BeerUAPI.Data</Name>
     </ProjectReference>
     <ProjectReference Include="..\BeerUAPI.Types\BeerUAPI.Types.csproj">

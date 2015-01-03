@@ -1,15 +1,15 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace BeerUAPI.Types
 {
-    [DataContract]
     public class Beer
     {
         /// <summary>
         /// Gets or sets the Id of Beer.
         /// </summary>
         [DataMember]
-        public int id { get; set; }
+        public string id { get; set; }
 
         /// <summary>
         /// Gets or sets the Name of Beer.
@@ -39,7 +39,7 @@ namespace BeerUAPI.Types
         /// Gets or sets the Style of Beer. 
         /// </summary>
         [DataMember]
-        public Style style { get; set; }
+        public Style styles { get; set; }
 
         /// <summary>
         /// Gets or sets the Abv of Beer.
@@ -111,5 +111,8 @@ namespace BeerUAPI.Types
         /// </summary>
         [DataMember]
         public labels labels { get; set; }
+
+        [DataMember]
+        public List<Beer> data { get; set; }
     }
 }

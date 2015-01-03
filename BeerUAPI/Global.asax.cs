@@ -7,6 +7,7 @@ using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using BeerUAPI.Controllers;
+using BeerUAPI.Data;
 using Microsoft.Practices.Unity;
 using Newtonsoft.Json;
 
@@ -19,6 +20,10 @@ namespace BeerUAPI
             var unity = new UnityContainer();
             unity.RegisterType<BaseController>();
             unity.RegisterType<BreweryDBController>();
+
+            unity.RegisterType<BaseRepository>();
+            unity.RegisterType<IBreweryDbRepository, BreweryDbRepository>();
+
 
             config.DependencyResolver = new IoCContainer(unity);
         }

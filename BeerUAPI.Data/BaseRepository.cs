@@ -1,20 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
-using System.Web.Http;
-using System.Web.Mvc;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace BeerUAPI.Controllers
+namespace BeerUAPI.Data
 {
-    public class BaseController : ApiController
-    {
+    public class BaseRepository
+ {
         protected string BaseUrl
         {
             get { return "https://api.brewerydb.com/v2/"; }
         }
 
         protected string Key
+        {
+            get { return "?key=8e74edb7320a50dc432315543c2de1f8"; }
+        }
+
+        protected string QueryStringKey
         {
             get { return "&key=8e74edb7320a50dc432315543c2de1f8"; }
         }
@@ -40,3 +44,5 @@ namespace BeerUAPI.Controllers
         }
     }
 }
+    
+

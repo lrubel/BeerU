@@ -43,6 +43,7 @@
     <Compile Include="Adjunct.cs" />
     <Compile Include="Beer.cs" />
     <Compile Include="Brewery.cs" />
+    <Compile Include="BreweryDBBeerModel.cs" />
     <Compile Include="Category.cs" />
     <Compile Include="Country.cs" />
     <Compile Include="Fermentable.cs" />
